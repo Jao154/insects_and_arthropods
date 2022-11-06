@@ -29,6 +29,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.insectsandarthropods.init.InsectsAndArthropodsModTabs;
+import net.mcreator.insectsandarthropods.init.InsectsAndArthropodsModItems;
+import net.mcreator.insectsandarthropods.init.InsectsAndArthropodsModEntities;
+import net.mcreator.insectsandarthropods.init.InsectsAndArthropodsModBlocks;
+import net.mcreator.insectsandarthropods.init.InsectsAndArthropodsModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -46,6 +50,11 @@ public class InsectsAndArthropodsMod {
 	public InsectsAndArthropodsMod() {
 		InsectsAndArthropodsModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		InsectsAndArthropodsModBlocks.REGISTRY.register(bus);
+		InsectsAndArthropodsModItems.REGISTRY.register(bus);
+		InsectsAndArthropodsModEntities.REGISTRY.register(bus);
+		InsectsAndArthropodsModBlockEntities.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
 	}

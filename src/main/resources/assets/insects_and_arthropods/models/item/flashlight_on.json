@@ -1,0 +1,7 @@
+{
+  "parent": "insects_and_arthropods:custom/lantern",
+  "textures": {
+    "0": "insects_and_arthropods:blocks/lantern",
+    "particle": "insects_and_arthropods:items/lantern"
+  }
+}

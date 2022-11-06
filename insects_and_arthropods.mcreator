@@ -7,13 +7,197 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mod_tab"
+    },
+    {
+      "name": "Firefly",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefly",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "FireflyModel",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefly_model",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GlowSlime",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_slime",
+      "path": "~/Items"
+    },
+    {
+      "name": "Flashlight",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightOn",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_block",
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightBlockBlockAdded",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_block_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightRightclicked",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightOnRightclicked",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightOnItemInHandTick",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabmod_tab": "Insects \u0026 Arthropods"
+      "itemGroup.tabmod_tab": "Insects \u0026 Arthropods",
+      "item.insects_and_arthropods.flashlight": "Flashlight",
+      "item.insects_and_arthropods.flashlight_on": "Flashlight",
+      "item.insects_and_arthropods.firefly_spawn_egg": "Firefly Spawn Egg",
+      "entity.insects_and_arthropods.firefly": "Firefly",
+      "block.insects_and_arthropods.flashlight_block": "Flashlight Block",
+      "item.insects_and_arthropods.glow_slime": "Glow Slime"
     }
   },
   "foldersRoot": {

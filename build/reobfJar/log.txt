@@ -113,23 +113,8 @@ Classpath:
 Working directory: C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\reobfJar
 Main class: net.md_5.specialsource.SpecialSource
 ====================================
-Loading mappings
-Loading mappings...  0%
-Loading mappings... 10%
-Loading mappings... 20%
-Loading mappings... 30%
-Loading mappings... 40%
-Loading mappings... 50%
-0 packages, 6859 classes, 30693 fields, 57911 methods
-Remapping final jar
-Remapping jar...  7%
-Remapping jar... 13%
-Remapping jar... 20%
-Remapping jar... 33%
-Remapping jar... 40%
-Remapping jar... 53%
-Remapping jar... 60%
-Remapping jar... 73%
-Remapping jar... 80%
-Remapping jar... 93%
-Remapping jar... 100%
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 134217728 bytes for G1 virtual space
+# An error report file with more information is saved as:
+# C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\reobfJar\hs_err_pid8452.log

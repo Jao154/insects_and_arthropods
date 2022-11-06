@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "insects_and_arthropods:blocks/air",
+    "up": "insects_and_arthropods:blocks/air",
+    "north": "insects_and_arthropods:blocks/air",
+    "east": "insects_and_arthropods:blocks/air",
+    "south": "insects_and_arthropods:blocks/air",
+    "west": "insects_and_arthropods:blocks/air",
+    "particle": "insects_and_arthropods:blocks/air"
+  },
+  "render_type": "translucent"
+}

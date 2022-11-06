@@ -1,0 +1,215 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 134217728 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3535), pid=3540, tid=14696
+#
+# JRE version:  (17.0.3+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.3+7, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant net.md_5.specialsource.SpecialSource --in-jar C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\libs\modid-1.0.jar --out-jar C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\reobfJar\output.jar --srg-in C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\createMcpToSrg\output.tsrg --live
+
+Host: Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Time: Sun Nov  6 09:26:55 2022 Hora oficial do Brasil elapsed time: 0.177799 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000295359a93f0):  JavaThread "Unknown thread" [_thread_in_vm, id=14696, stack(0x000000b6ef400000,0x000000b6ef500000)]
+
+Stack: [0x000000b6ef400000,0x000000b6ef500000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x675efa]
+V  [jvm.dll+0x830a24]
+V  [jvm.dll+0x8321ce]
+V  [jvm.dll+0x832833]
+V  [jvm.dll+0x2454b5]
+V  [jvm.dll+0x672de9]
+V  [jvm.dll+0x667732]
+V  [jvm.dll+0x3043ab]
+V  [jvm.dll+0x30b8f6]
+V  [jvm.dll+0x35b62e]
+V  [jvm.dll+0x35b85f]
+V  [jvm.dll+0x2db248]
+V  [jvm.dll+0x2dc1b4]
+V  [jvm.dll+0x802651]
+V  [jvm.dll+0x3693b1]
+V  [jvm.dll+0x7e1aac]
+V  [jvm.dll+0x3ebd8f]
+V  [jvm.dll+0x3ed911]
+C  [jli.dll+0x5277]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x526a1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff9bf336e98, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000029535a03ca0 GCTaskThread "GC Thread#0" [stack: 0x000000b6ef500000,0x000000b6ef600000] [id=320]
+  0x0000029535a15660 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000b6ef600000,0x000000b6ef700000] [id=12516]
+  0x0000029535a15e20 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000b6ef700000,0x000000b6ef800000] [id=13124]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff9beb0bcd7]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00000295359a4140] Heap_lock - owner thread: 0x00000295359a93f0
+
+Heap address: 0x0000000081a00000, size: 2022 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000081a00000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff9beeef249]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (1 events):
+Event: 0.014 Loaded shared library E:\Mcreator\jdk\bin\java.dll
+
+
+Dynamic libraries:
+0x00007ff6f5ad0000 - 0x00007ff6f5ade000 	E:\Mcreator\jdk\bin\java.exe
+0x00007ffa05830000 - 0x00007ffa05a28000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffa03d80000 - 0x00007ffa03e3d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffa034b0000 - 0x00007ffa03782000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffa031d0000 - 0x00007ffa032d0000 	C:\Windows\System32\ucrtbase.dll
+0x00007ff9c40b0000 - 0x00007ff9c40c8000 	E:\Mcreator\jdk\bin\jli.dll
+0x00007ff9c4090000 - 0x00007ff9c40a9000 	E:\Mcreator\jdk\bin\VCRUNTIME140.dll
+0x00007ffa05200000 - 0x00007ffa0539d000 	C:\Windows\System32\USER32.dll
+0x00007ffa02f40000 - 0x00007ffa02f62000 	C:\Windows\System32\win32u.dll
+0x00007ffa03cf0000 - 0x00007ffa03d1b000 	C:\Windows\System32\GDI32.dll
+0x00007ff9f7b00000 - 0x00007ff9f7d9a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffa033a0000 - 0x00007ffa034af000 	C:\Windows\System32\gdi32full.dll
+0x00007ffa048f0000 - 0x00007ffa0498e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffa032d0000 - 0x00007ffa0336d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffa03cc0000 - 0x00007ffa03cf0000 	C:\Windows\System32\IMM32.DLL
+0x00007ff9effb0000 - 0x00007ff9effbc000 	E:\Mcreator\jdk\bin\vcruntime140_1.dll
+0x00007ff9c3ff0000 - 0x00007ff9c4081000 	E:\Mcreator\jdk\bin\msvcp140.dll
+0x00007ff9be820000 - 0x00007ff9bf468000 	E:\Mcreator\jdk\bin\server\jvm.dll
+0x00007ffa038f0000 - 0x00007ffa0399e000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffa054d0000 - 0x00007ffa0556c000 	C:\Windows\System32\sechost.dll
+0x00007ffa039a0000 - 0x00007ffa03ac5000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffa03b30000 - 0x00007ffa03b38000 	C:\Windows\System32\PSAPI.DLL
+0x00007ff9fc410000 - 0x00007ff9fc437000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ff9efdc0000 - 0x00007ff9efdc9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffa056d0000 - 0x00007ffa0573b000 	C:\Windows\System32\WS2_32.dll
+0x00007ff9faba0000 - 0x00007ff9fabaa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffa017e0000 - 0x00007ffa017f2000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ff9efc10000 - 0x00007ff9efc1a000 	E:\Mcreator\jdk\bin\jimage.dll
+0x00007ffa00b80000 - 0x00007ffa00d64000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ff9fd590000 - 0x00007ff9fd5bc000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffa03790000 - 0x00007ffa03812000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ff9c3fc0000 - 0x00007ff9c3fe5000 	E:\Mcreator\jdk\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;E:\Mcreator\jdk\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;E:\Mcreator\jdk\bin\server
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant 
+java_command: net.md_5.specialsource.SpecialSource --in-jar C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\libs\modid-1.0.jar --out-jar C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\reobfJar\output.jar --srg-in C:\Users\jubel\MCreatorWorkspaces\insects_and_arthropods\build\createMcpToSrg\output.tsrg --live
+java_class_path (initial): C:\Users\jubel\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.11.0\SpecialSource-1.11.0-shaded.jar;C:\Users\jubel\.mcreator\gradle\caches\forge_gradle\deobf_dependencies\software\bernie\geckolib\geckolib-forge-1.19\3.1.23_mapped_official_1.19.2\geckolib-forge-1.19-3.1.23_mapped_official_1.19.2.jar;C:\Users\jubel\.mcreator\gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.1.47_mapped_official_1.19.2\forge-1.19.2-43.1.47_mapped_official_1.19.2-recomp.jar;C:\Users\jubel\.mcreator\gradle\caches\forge_gradle\minecraft_repo\versions\1.19.2\client-extra.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlloader\1.19.2-43.1.47\a1ec5892276963b574aeedaa38ab234815c66c63\fmlloader-1.19.2-43.1.47.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarSelector\0.3.16\2a31421fb5e267249da103a644f23afb43d158af\JarJarSelector-0.3.16.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\JarJarMetadata\0.3.16\f62c8c898dffc8666f5097a8587ed72095e8e83a\JarJarMetadata-0.3.16.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\com.google.guava\guava\31.0.1-jre\119ea2b2bc205b138974d351777b20f02b92704b\guava-31.0.1-jre.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.1\1227f9e0666314f9de41477e3ec277e542ed7f7b\java-objc-bridge-1.1.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.1.5\f3da18e12c696d35a47c82cbb2cc8b5aa15e1154\mergetool-1.1.5-api.jar;C:\Users\jubel\.mcreator\gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\23.0.0\8cc20c07506ec18e0834947b84a864bfc094484e\annotations-23.0.0.jar;C:\Users\jubel\.mcreator\gradle\caches\forge_gradle\mcp_repo\
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 134217728                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2120220672                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2120220672                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=E:\Mcreator\jdk
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Users\jubel\AppData\Local\Microsoft\WindowsApps;C:\Users\jubel\AppData\Local\GitHubDesktop\bin;E:\Mcreator\jdk\bin
+USERNAME=Lucas Oliveira
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+OS uptime: 9 days 2:53 hours
+
+CPU: total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 58 stepping 9 microcode 0x21, cx8, cmov, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, tsc, tscinvbit, avx, aes, erms, clmul, vzeroupper, clflush
+
+Memory: 4k page, system-wide physical 8082M (1485M free)
+TotalPageFile size 14159M (AvailPageFile size 84M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 51M, peak: 179M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.3+7) for windows-amd64 JRE (17.0.3+7), built on Apr 19 2022 16:55:35 by "" with MS VC++ 16.7 (VS2019)
+
+END.

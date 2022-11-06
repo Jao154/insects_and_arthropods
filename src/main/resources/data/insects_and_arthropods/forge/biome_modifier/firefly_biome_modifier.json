@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "dark_forest",
+    "plains",
+    "meadow"
+  ],
+  "spawners": {
+    "type": "insects_and_arthropods:firefly",
+    "weight": 30,
+    "minCount": 7,
+    "maxCount": 15
+  }
+}
