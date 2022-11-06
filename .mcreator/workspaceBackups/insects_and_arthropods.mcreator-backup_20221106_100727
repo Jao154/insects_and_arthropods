@@ -143,6 +143,69 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "FlashlightOnRightclicked",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightOnItemInHandTick",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FlashlightRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FireflyLayer",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefly_layer",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -154,7 +217,7 @@
       "item.insects_and_arthropods.flashlight_on": "Flashlight",
       "item.insects_and_arthropods.firefly_spawn_egg": "Firefly Spawn Egg",
       "entity.insects_and_arthropods.firefly": "Firefly",
-      "block.insects_and_arthropods.flashlight_block": "Flashlight Block",
+      "block.insects_and_arthropods.flashlight_block": "FlashlightBlock",
       "item.insects_and_arthropods.glow_slime": "Glow Slime"
     }
   },

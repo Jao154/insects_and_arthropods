@@ -12,11 +12,10 @@ import net.minecraft.world.InteractionHand;
 
 import net.mcreator.insectsandarthropods.procedures.FlashlightOnRightclickedProcedure;
 import net.mcreator.insectsandarthropods.procedures.FlashlightOnItemInHandTickProcedure;
-import net.mcreator.insectsandarthropods.init.InsectsAndArthropodsModTabs;
 
 public class FlashlightOnItem extends Item {
 	public FlashlightOnItem() {
-		super(new Item.Properties().tab(InsectsAndArthropodsModTabs.TAB_MOD_TAB).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

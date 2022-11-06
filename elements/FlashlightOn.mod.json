@@ -8,7 +8,7 @@
     "name": "Flashlight",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:ModTab"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,
