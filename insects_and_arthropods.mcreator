@@ -185,6 +185,15 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "FlashlightRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -196,7 +205,7 @@
       "item.insects_and_arthropods.flashlight_on": "Flashlight",
       "item.insects_and_arthropods.firefly_spawn_egg": "Firefly Spawn Egg",
       "entity.insects_and_arthropods.firefly": "Firefly",
-      "block.insects_and_arthropods.flashlight_block": "Flashlight Block",
+      "block.insects_and_arthropods.flashlight_block": "FlashlightBlock",
       "item.insects_and_arthropods.glow_slime": "Glow Slime"
     }
   },

@@ -91,7 +91,7 @@ public class FlashlightBlockBlockEntity extends RandomizableContainerBlockEntity
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Flashlight Block");
+		return Component.literal("FlashlightBlock");
 	}
 
 	@Override
